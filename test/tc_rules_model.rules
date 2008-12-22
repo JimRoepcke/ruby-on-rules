@@ -1,0 +1,38 @@
+rule {
+  lhs "(foo = 'value')"
+  key :look 
+  val 'BasicLook'
+  pri 100
+}
+
+rule {
+  lhs "((task = 'list') AND (foo = 'value'))"
+  key :pageName
+  val 'Main'
+  pri 100
+}
+
+rule {
+  lhs "((task = 'edit') AND (foo = 'value'))"
+  key :pageName
+  val 'Wrong'
+  pri 100
+}
+
+rule {
+  lhs "(foo = 'value')"
+  key :displayPropertyKeys
+  val ['first_name', 'phone_number', 'email']
+  pri 100
+}
+
+=begin
+rule {
+  lhs "(foo = 'value')"
+  key :displayPropertyKeys
+  val 'foo'
+  ass { | rule, ctx | ctx.entity.attribute_names }
+  pri 10
+  cache false
+}
+=end
