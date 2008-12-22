@@ -1,0 +1,15 @@
+Rules is a Ruby library that provides application developers
+with an easy-to-use rule engine.  Rule-based development can
+dramatically decrease the time it takes to develop a
+sophisticated application, while at the same time increasing
+the speed a development team can make simple and complicated
+local or application-wide changes.
+
+The design is based on Apple's WebObjects' Direct To Web
+framework.
+
+Rules is stuck at the pre-alpha stage of development. You
+are encouraged to fork this repository and make
+improvements.
+
+Special thanks to TapKit for the qualifier module.
